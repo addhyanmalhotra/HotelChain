@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Branch name:</strong>
+  <%= @hotel.branch_name %>
+</p>
+
+<p>
+  <strong>Manager:</strong>
+  <%= @hotel.manager_id %>
+</p>
+
+<p>
+  <strong>Stars:</strong>
+  <%= @hotel.stars %>
+</p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @hotel.street_address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @hotel.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @hotel.country %>
+</p>
+
+<p>
+  <strong>Pincode:</strong>
+  <%= @hotel.pincode %>
+</p>
+
+<%= link_to 'Edit', edit_hotel_path(@hotel) %> |
+<%= link_to 'Back', hotels_path %>
