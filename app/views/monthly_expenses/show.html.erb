@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Financial month:</strong>
+  <%= @monthly_expense.financial_month %>
+</p>
+
+<p>
+  <strong>Electricity bill:</strong>
+  <%= @monthly_expense.electricity_bill %>
+</p>
+
+<p>
+  <strong>Water bill:</strong>
+  <%= @monthly_expense.water_bill %>
+</p>
+
+<p>
+  <strong>Branch:</strong>
+  <%= @monthly_expense.branch_id %>
+</p>
+
+<p>
+  <strong>Monthly turnover:</strong>
+  <%= @monthly_expense.monthly_turnover %>
+</p>
+
+<p>
+  <strong>Monthly profit:</strong>
+  <%= @monthly_expense.monthly_profit %>
+</p>
+
+<%= link_to 'Edit', edit_monthly_expense_path(@monthly_expense) %> |
+<%= link_to 'Back', monthly_expenses_path %>

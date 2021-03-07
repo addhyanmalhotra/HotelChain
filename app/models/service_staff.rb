@@ -1,0 +1,2 @@
+class ServiceStaff < ApplicationRecord
+end
