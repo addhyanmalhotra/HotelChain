@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @guest.member_id %>
+</p>
+
+<p>
+  <strong>Branch:</strong>
+  <%= @guest.branch_id %>
+</p>
+
+<p>
+  <strong>R no:</strong>
+  <%= @guest.r_no %>
+</p>
+
+<p>
+  <strong>Check in:</strong>
+  <%= @guest.check_in %>
+</p>
+
+<p>
+  <strong>Check out:</strong>
+  <%= @guest.check_out %>
+</p>
+
+<p>
+  <strong>Billed amount:</strong>
+  <%= @guest.billed_amount %>
+</p>
+
+<%= link_to 'Edit', edit_guest_path(@guest) %> |
+<%= link_to 'Back', guests_path %>

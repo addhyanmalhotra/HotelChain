@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  financial_month: 2021-03-08
+  electricity_bill: 1.5
+  water_bill: 1.5
+  branch_id: 
+  monthly_turnover: 1.5
+  monthly_profit: 1.5
+
+two:
+  financial_month: 2021-03-08
+  electricity_bill: 1.5
+  water_bill: 1.5
+  branch_id: 
+  monthly_turnover: 1.5
+  monthly_profit: 1.5

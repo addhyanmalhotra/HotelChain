@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member_id: 
+  tier: 1
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  contact_number: 
+  loyalty_points: 1
+
+two:
+  member_id: 
+  tier: 1
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  contact_number: 
+  loyalty_points: 1
