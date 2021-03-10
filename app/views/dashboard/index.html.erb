@@ -27,9 +27,11 @@
           </thead>
           <tbody>
           <% @upcoming_checkin.each do |t| %>
-            <tr><%= t.r_no %>></tr>
-            <tr><%= @hotel_name_hash[t.branch_id] %></tr>
-            <tr><%= t.check_in %></tr>
+            <tr>
+              <td><%= t.r_no %></td>
+              <td><%= @hotel_name_hash[t.branch_id] %></td>
+              <td><%= t.check_in %></td>
+            </tr>
           <% end %>
           </tbody>
         </table>
