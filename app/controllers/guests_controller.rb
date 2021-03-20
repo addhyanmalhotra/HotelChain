@@ -1,5 +1,6 @@
 class GuestsController < ApplicationController
   before_action :set_guest, only: %i[ show edit update destroy ]
+  before_action :set_members
 
   # GET /guests or /guests.json
   def index
@@ -66,4 +67,13 @@ class GuestsController < ApplicationController
     def guest_params
       params.require(:guest).permit(:member_id, :branch_id, :r_no, :check_in, :check_out, :billed_amount)
     end
+  def set_members
+    @members =  Member.all.pluck("first_name, id")
+    @members_hash = @members.to_h.invert
+  end
+
+  def set_rooms
+    @rooms
+  end
+
 end
