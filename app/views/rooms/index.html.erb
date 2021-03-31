@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>R no</th>
-      <th>Type</th>
       <th>Tarrif</th>
       <th>Occupancy</th>
       <th>Branch</th>
@@ -21,10 +20,9 @@
     <% @rooms.each do |room| %>
       <tr>
         <td><%= room.r_no %></td>
-        <td><%= room.type %></td>
         <td><%= room.tarrif %></td>
         <td><%= room.occupancy %></td>
-        <td><%= room.branch_id %></td>
+        <td><%= @branches_hash[room.branch_id] %></td>
         <td><%= link_to 'Show', room, class: "btn btn-success" %></td>
         <td><%= link_to 'Edit', edit_room_path(room), class: "btn btn-warning" %></td>
         <td><%= button_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>

@@ -6,7 +6,7 @@
   <div class="form-inputs">
     <%= f.input :member_id, collection: @members || [["hi,1"]]%>
     <%= f.input :branch_id, collection: @branches || [["hi,1"]]%>
-    <%= f.input :r_no %>
+    <%= f.input :r_no, collection: @rooms %>
     <%= f.input :check_in %>
     <%= f.input :check_out %>
     <%= f.input :billed_amount %>

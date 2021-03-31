@@ -1,3 +1,8 @@
+// For creation on new employee a blank record is inserted and
+// then passed on a parameter  here 'employee'
+// For updation, the empoyee tuple is queried loaded into class object and passed on as parameter to the for
+// POST and PATCH HTML Requests then pass user input to Database connector which inturn
+// makes the updates in the database
 <%= form_with(model: employee) do |form| %>
   <% if employee.errors.any? %>
     <div id="error_explanation">
